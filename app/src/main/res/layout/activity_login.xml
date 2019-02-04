@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ ShoppingList Manager
+  ~ Designed by DubinosTech
+  ~ Emmanuel Asinyo & Brahim Kanouche
+  ~
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.dubinosTech.shoppinglistManager.Login_register.LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_weight="0.18"
+        android:padding="20dp"
+        android:text="Shopping List"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.18"
+        app:srcCompat="@drawable/shopping" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textColorHint="@android:color/background_dark" />
+
+
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:singleLine="true"
+        android:textColorHint="@android:color/background_dark" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#388e3c"
+        android:onClick="login"
+        android:text="Login"
+        android:textColorLink="@android:color/black"
+        tools:ignore="OnClick" />
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:onClick="register"
+        android:text="Register"
+        android:textColorLink="#388e3c"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_weight="0.18"
+        android:text="Forgot Password ?"
+        android:textColor="@android:color/black"
+        android:onClick="forgotPassword"
+        android:clickable="true"
+        android:textSize="20dp" />
+
+
+</LinearLayout>

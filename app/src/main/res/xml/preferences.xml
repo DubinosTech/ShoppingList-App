@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ ShoppingList Manager
+  ~ Designed by DubinosTech
+  ~ Emmanuel Asinyo & Brahim Kanouche
+  ~
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference
+        android:key="FILE_LOCATION"
+        android:title="@string/file_location"
+        android:inputType="text" />
+
+</PreferenceScreen>
